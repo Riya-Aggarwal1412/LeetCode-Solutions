@@ -1,0 +1,43 @@
+/* two Sum */
+
+import java.util.Scanner;
+class Solution{
+    public static void main (String [] args){
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter the size of an array: ");
+        int size = sc.nextInt();
+
+	if(size<=0){
+		System.out.println("Array size must be positive");
+		return;
+	}
+
+        int[] num = new int[size];
+
+        System.out.println("Enter the elements of an array");
+        for (int i=0;i<size;i++){
+            num[i] = sc.nextInt();
+        }
+
+        System.out.print("Enter the target value: ");
+        int target = sc.nextInt();
+
+         int[] result = twoSum(num, target);
+
+         if (result != null) {
+            System.out.println("The two numbers are at position: " + result[0] + " and " +       result[1]);
+        } else {
+            System.out.println("No two sum solution found.");
+        }
+    }
+        public static int[] twoSum(int[] num, int target) {
+        for (int i = 0; i < num.length; i++) {
+            for (int j = i + 1; j < num.length; j++) {
+                if (num[i] + num[j] == target) {
+                    return new int[] { i, j }; 
+                }
+            }
+        }
+        return null;
+    }
+}
