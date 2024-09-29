@@ -25,7 +25,7 @@ class Solution{
          int[] result = twoSum(num, target);
 
          if (result != null) {
-            System.out.println("The two numbers are at position: " + result[0] + " and " +       result[1]);
+            System.out.println("The two numbers are at position: " + result[0] + " and " + result[1]);
         } else {
             System.out.println("No two sum solution found.");
         }
