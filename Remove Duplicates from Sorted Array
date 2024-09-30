@@ -1,0 +1,46 @@
+/* Remove Duplicates from Sorted Array */
+
+import java.util.Scanner;
+
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int n = nums.length;
+        if(n == 0) return n;
+
+        int i = 0;
+        for (int j = 0; j <= n-1; j++) {
+            if (nums[i] != nums[j]) {
+                i++;
+                nums[i] = nums[j];
+            }
+        }
+        return i + 1;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of an array: ");
+        int size = sc.nextInt();
+
+        if (size <= 0){
+            System.out.println("Array must be positive ");
+            return;
+        }
+
+        int[] num = new int[size];
+        System.out.println("Enter the elements: ");
+        for (int i=0 ; i<size; i++){
+            num[i] = sc.nextInt();
+        }
+
+        Solution solution = new Solution();
+        int uniqueElements = solution.removeDuplicates(num);
+        System.out.println("Number of unique elements: " + uniqueElements);
+
+        System.out.print("Unique elements: ");
+        for (int i=0; i<uniqueElements; i++){
+            System.out.print(num[i] + " ");
+        }
+        System.out.println();
+    }
+}
