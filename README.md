@@ -8,3 +8,9 @@ Goal:
 1. Return the number of unique elements (k) in the modified array.
 2. Modify the array so that the first k elements contain the unique values.
 3. The remaining elements beyond k don't matter.
+
+Question3: 💡 Problem Breakdown: Remove Element (LeetCode) 💡<br>
+Today’s challenge is about removing all occurrences of a specific value from an array, in-place. Here’s the task in simple terms:<br?
+🔹 Input: An array of numbers and a specific value (let's call it val).<br>
+🔹 Goal: Remove all occurrences of val from the array without using extra space (meaning you need to modify the array itself).<br>
+🔹 Output: The number of elements remaining in the array after removing all instances of val.<br>
