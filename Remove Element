@@ -1,0 +1,41 @@
+/*Remove Element*/
+
+import java.util.Scanner;
+class Solution{
+    public static void main (String [] args){
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter the size of an array: ");
+        int size = sc.nextInt();
+
+	if(size<=0){
+		System.out.println("Array size must be positive");
+		return;
+	}
+
+        int[] num = new int[size];
+
+        System.out.println("Enter the elements of an array");
+        for (int i=0;i<size;i++){
+            num[i] = sc.nextInt();
+        }
+        System.out.print("Enter an element to remove: ");
+        int val = sc.nextInt();
+
+        int k = removeElement(num,val);
+        System.out.println("Number of element not equal to " + val + ": " + k);
+        System.out.println("First "+k+" element of the array: ");
+        for (int i=0; i<k; i++){
+            System.out.println(num[i] + " ");
+        }
+    }
+    public static int removeElement(int[] nums, int val){
+        int k = 0;
+        for (int i =0; i <nums.length ; i++){
+            if (nums[i] != val){
+                nums[k++] = nums[i] ;
+
+            }
+        }
+        return k;
+    }
+}
