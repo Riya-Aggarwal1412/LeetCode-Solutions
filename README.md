@@ -14,3 +14,6 @@ Today’s challenge is about removing all occurrences of a specific value from a
 🔹 Input: An array of numbers and a specific value (let's call it val).<br>
 🔹 Goal: Remove all occurrences of val from the array without using extra space (meaning you need to modify the array itself).<br>
 🔹 Output: The number of elements remaining in the array after removing all instances of val.<br>
+
+Question4: Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.<br>
+You must write an algorithm with O(log n) runtime complexity.
