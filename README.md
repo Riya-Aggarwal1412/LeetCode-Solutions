@@ -17,3 +17,6 @@ Today’s challenge is about removing all occurrences of a specific value from a
 
 Question4: Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.<br>
 You must write an algorithm with O(log n) runtime complexity.
+
+Question 5: You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.<br>
+Increment the large integer by one and return the resulting array of digits.
