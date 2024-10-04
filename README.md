@@ -20,3 +20,5 @@ You must write an algorithm with O(log n) runtime complexity.
 
 Question 5: You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.<br>
 Increment the large integer by one and return the resulting array of digits.
+
+Question 6: You have two sorted arrays: nums1 and nums2. Your job is to merge them into one sorted array, but the final result should be stored in nums1 🧩. To do this, start from the end of both arrays, compare the numbers, and place the largest one at the end of nums1 🔄. Keep going until all elements from nums2 are merged into nums1. Now, nums1 will have all the elements sorted in order! ✅
