@@ -23,7 +23,7 @@ Increment the large integer by one and return the resulting array of digits.
 
 **Question 6:** You have two sorted arrays: nums1 and nums2. Your job is to merge them into one sorted array, but the final result should be stored in nums1 🧩. To do this, start from the end of both arrays, compare the numbers, and place the largest one at the end of nums1 🔄. Keep going until all elements from nums2 are merged into nums1. Now, nums1 will have all the elements sorted in order! ✅
 
-Question 7: Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.<br>
+**Question 7:** Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.<br>
 You must implement a solution with a linear runtime complexity and use only constant extra space.<br>
 **Example 1:** <br>
 Input: nums = [2,2,1]<br>
