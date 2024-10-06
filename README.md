@@ -28,3 +28,6 @@ You must implement a solution with a linear runtime complexity and use only cons
 **Example 1:** <br>
 Input: nums = [2,2,1]<br>
 Output: 1<br>
+
+**Question 8:** Given an array nums of size n, return the majority element.<br>
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.<br>
