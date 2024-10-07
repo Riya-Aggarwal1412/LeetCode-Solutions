@@ -31,3 +31,7 @@ Output: 1<br>
 
 **Question 8:** Given an array nums of size n, return the majority element.<br>
 The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.<br>
+
+**Question 9:** Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.<br>
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
