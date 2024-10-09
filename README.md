@@ -35,3 +35,7 @@ The majority element is the element that appears more than ⌊n / 2⌋ times. Yo
 **Question 9:** Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.<br>
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
+**Question 11:** Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.<br>
+**Example 1:** <br>
+Input: nums1 = [1,2,2,1], nums2 = [2,2]<br>
+Output: [2]
