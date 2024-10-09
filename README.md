@@ -33,6 +33,13 @@ Output: 1<br>
 The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.<br>
 
 **Question 9:** Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.<br>
+
+**Question 10:** Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.<br>
+**Example 1:** <br>
+Input: nums = [1,2,3,1]<br>
+Output: true<br>
+**Explanation:** <br>
+The element 1 occurs at the indices 0 and 3.<br>
 You must implement a solution with a linear runtime complexity and use only constant extra space.
 
 **Question 11:** Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.<br>
