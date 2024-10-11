@@ -1,0 +1,46 @@
+/*Contains Duplicate II*/
+
+import java.util.Scanner;
+
+public class Solution {
+    public boolean containsNearbyDuplicate(int[] nums, int k) {
+        int[] indices = new int[100000]; // assuming the maximum value of nums is 100000
+        
+        for (int i = 0; i < nums.length; i++) {
+            if (i > k) {
+                int prevIndex = i - k - 1;
+                if (prevIndex >= 0) {
+                    indices[nums[prevIndex]] = 0; // reset the index
+                }
+            }
+            if (indices[nums[i]] != 0 && i - indices[nums[i]] <= k) {
+                return true;
+            }
+            indices[nums[i]] = i + 1;
+        }
+        
+        return false;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the size of the array:");
+        int n = scanner.nextInt();
+        int[] nums = new int[n];
+
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < n; i++) {
+            nums[i] = scanner.nextInt();
+        }
+
+        System.out.println("Enter the value of k:");
+        int k = scanner.nextInt();
+
+        boolean result = solution.containsNearbyDuplicate(nums, k);
+        System.out.println("Result: " + result);
+    }
+}
+
+//End of code 
