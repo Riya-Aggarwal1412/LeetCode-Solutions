@@ -51,3 +51,8 @@ Output: [2]
 **Example 1:** <br>
 Input: nums1 = [1,2,2,1], nums2 = [2,2]<br>
 Output: [2,2]
+
+**Question 13:** Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.<br>
+**Example 1:** <br>
+Input: nums = [1,2,3,1], k = 3 <br>
+Output: true
